@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: developer-lightspeed-developer-preview
+  name: developer-hub-mcp
   namespace: ai
   title: Red Hat Developer Hub MCP Tools
   description: Backend plugins for Red Hat Developer Hub that provide and MCP server and tools for MCP clients and AI assistants to interact with the software catalog and techdocs
@@ -27,7 +27,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: developer-lightspeed-developer-preview
+  name: developer-lightspeed
   namespace: ai
   title: Developer Lightspeed
   description: Red Hat Developer Lightspeed for Red Hat Developer Hub is a virtual assistant powered by generative AI that offers in-depth insights into RHDH, including its wide range of capabilities. You can interact with this assistant to explore and learn more about RHDH in greater detail.
