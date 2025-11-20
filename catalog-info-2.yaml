@@ -1,0 +1,52 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: developer-hub-mcp
+  namespace: ai
+  title: Red Hat Developer Hub MCP Tools
+  description: Backend plugins for Red Hat Developer Hub that provide and MCP server and tools for MCP clients and AI assistants to interact with the software catalog and techdocs
+  tags: ["rhel","preview"]
+  annotations:
+    ai.redhat.com/category: "Platform"
+    ai.redhat.com/usecase: "Generative AI"
+    ai.redhat.com/owner: "hcm-engineering-productivity"
+    ai.redhat.com/domain: "external"
+    ai.redhat.com/status: "active"
+    ai.redhat.com/featured: 'false'
+    github.com/project-slug: ""
+    backstage.io/techdocs-ref: url:https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.8/html/interacting_with_red_hat_developer_lightspeed_for_red_hat_developer_hub/index
+    backstage.io/source-location: url:https://github.com/redhat-developer/rhdh-plugins/tree/main/workspaces/lightspeed
+    gitlab.com/instance: ""
+    gitlab.com/project-slug: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:ai/redhat-ai
+  system: system:ai/redhat-ai
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: developer-lightspeed
+  namespace: ai
+  title: Developer Lightspeed
+  description: Red Hat Developer Lightspeed for Red Hat Developer Hub is a virtual assistant powered by generative AI that offers in-depth insights into RHDH, including its wide range of capabilities. You can interact with this assistant to explore and learn more about RHDH in greater detail.
+  tags: ["rhdh","lightspeed","bot","chat"]
+  annotations:
+    ai.redhat.com/category: "Platform"
+    ai.redhat.com/usecase: "Generative AI"
+    ai.redhat.com/owner: "hcm-engineering-productivity"
+    ai.redhat.com/domain: "external"
+    ai.redhat.com/status: "active"
+    ai.redhat.com/featured: 'false'
+    github.com/project-slug: ""
+    backstage.io/techdocs-ref: url:https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.8/html/interacting_with_red_hat_developer_lightspeed_for_red_hat_developer_hub/index
+    backstage.io/source-location: url:https://github.com/redhat-developer/rhdh-plugins/tree/main/workspaces/lightspeed
+    gitlab.com/instance: ""
+    gitlab.com/project-slug: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:ai/redhat-ai
+  system: system:ai/redhat-ai
+
